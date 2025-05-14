@@ -1,0 +1,111 @@
+<!--Modification Log
+#Original Author: Nicole Daniel
+#Date Created: 02/01/2025
+#Version: 0.0
+#Modified By: Nicole Daniel
+#Modification Log:
+
+Version 0.0 - 02/01/2025 - Added Html tags, body tags, main tags, head tags, navigation system, linked to css file, added a tile,
+ meta tags, black star images, added some text in a <p> tag and a header in a <h1> tag
+Version 0.1 - 02/19/2025 - Added the working <form> tags and created/connected it to contact.js
+
+-->
+
+<!DOCTYPE html>
+<!-- Nicole Daniel
+     updated 3/7/2025 -->
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta name="author" content="Nicole Daniel" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Nicole Daniel Web Developer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/contact.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e08db6af84.js" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/sipderweb.png" alt="sipderweb" width="50"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navB">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cast.html">Cast</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="datesandevents.html">Dates & Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+</div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!--contact form-->
+    <title>Contact Form</title>
+</head>
+<body>
+  <div class="contact-container">
+          <div id="overlay">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left"onsubmit="event.preventDefault(); validateForm()">
+                
+              <div class="contact-left-title">
+                <h2>Contact Us</h2>
+                <hr>
+              </div>
+              <input type="hidden" name="access_key" value="594c0251-a391-4e31-b3cb-4910769b093c">
+
+                <input type="text" id="name" placeholder="Your Name" class="contact-inputs">
+                <small class="error"></small>
+
+                <input type="text" id="email" placeholder="Your Email" class="contact-inputs">
+                <small class="error"></small>
+
+                <textarea type="text" id="message" placeholder="Your Message" rows="6" class="contact-inputs"></textarea>
+                <small class="error"></small>
+
+                <div class="sendmessage">
+                    <input class="w3-blue" type="submit" value="Send Message">
+                    <p id="success"></p>
+                </div>
+            
+              </form>
+          </div>
+  </div>
+   <!--contact form end-->
+
+  <footer class="bg-secondary p-4 text-white text-center">
+    <div class="foot">
+    <P><a href="https://www.linkedin.com/in/nicole-daniel-80761b305/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.tiktok.com/@petfern1012?lang=en" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+         <a href="mailto: Nicoledawndaniel@gmail.com" class="text-white fs-3">Email Us!</a>
+      <a href="https://www.youtube.com/@nicoledaniel3287" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.instagram.com/itz_elocin1012/" target="_blank"><i class="fa-brands fa-instagram"></i></a></i>
+   </p>
+  </div>
+    </footer>
+            
+  <script src="JavaScript/contact.js"></script>
+</body>
+</html>
